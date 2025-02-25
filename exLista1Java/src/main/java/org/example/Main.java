@@ -7,6 +7,7 @@ public class Main {
     public static ConversorTemperatura conversorTemperatura = new ConversorTemperatura();
     public static OperadorMatematico calculador = new OperadorMatematico();
     public static CalculaGastosLoja calculaGastos = new CalculaGastosLoja();
+    public static CalculadoraArea calculadoraArea = new CalculadoraArea();
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Main {
         exercicio2();
         exercicio3();
         exercicio4();
+        exercicio5();
 
     }
 
@@ -70,7 +72,15 @@ public class Main {
 
     public static void exercicio5() {
 
-        // fazer
+        System.out.print("Digite o comprimento do terreno: ");
+        double comprimento = scanner.nextDouble();
+
+        System.out.print("Digite a largura do terreno: ");
+        double largura = scanner.nextDouble();
+
+        double area = calculadoraArea.calcularArea(comprimento, largura);
+
+        System.out.println("Area: " + area);
 
     }
 
